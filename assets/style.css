@@ -1,0 +1,203 @@
+CSS reset Eric Meyers
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*====================
+Custom CSS Begins here
+====================*/
+
+
+/* General */
+body {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px ;
+}
+.ol {
+    list-style: decimal inside;
+    /* padding-left: 20px; */
+    /* list-style-position: inside; */
+}
+.li {
+    /* padding-left: 20px; */
+    list-style: disc;
+    list-style-position: inside;
+}
+.li-square {
+    /* padding-left: 20px; */
+    list-style: square inside;
+}
+.padding-left {
+padding-left: 20px;
+}
+.padding-left-10 {
+padding-left: 10px;
+}
+.padding-left-30 {
+    padding-left: 30px;
+    }
+.li-tick {
+    list-style: inside symbols();
+}
+.indentation {
+    text-indent: 10px;
+}
+.text-color {
+    color: rgb(212,206,166);
+    line-height: 2;
+}
+/* Specific */
+
+/* Header */
+
+.navbar {
+    background: rgb(249,97,21);
+}
+.navbar li {
+    display: inline-block;
+    padding: 0px 35px 0px 5px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    line-height: 5;
+}
+
+/* Main */
+
+.main {
+    padding-bottom: 30px;
+    background-color: rgb(212,206,166);
+}
+
+/* 3 columns section */
+
+.three-columns {
+    margin: 0 auto;
+    /* background-color: rgb(212,206,166); */
+    display: flex;
+    /* align-content: stretch; */
+    /* flex-wrap: wrap; */
+}
+
+.col-1-3 {
+
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: space-around;
+    /* height: 300px; use stretch*/ 
+    /* width: 320px;  */
+    flex-basis: 320px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    /* use Flex basis */
+    background-color: #0F5978;
+    box-shadow: 1px 1px 10px 2px black;
+    margin: 37px 15px;
+    padding: 30px 0;
+}
+
+/* .col-1-3 ol {
+    list-style: decimal;
+    list-style-position: inside;
+} */
+
+.col-1-3 ol li {
+    /* padding-left: 10px; */
+    color:  rgb(212,206,166);
+    font-size: 20px;
+    line-height: 1.5;
+    /* line-height: 2.25; */
+}
+.col-1-3 ul li {
+    /* padding-left: 10px; */
+    font-size: 20px;
+    color:  rgb(212,206,166);
+    line-height: 1.5;
+}
+
+.fas {
+    color: black;
+}
+
+/* Article section begins here */
+
+.article {
+    /* background-color:  rgb(212,206,166); */
+    margin: 0 auto;
+}
+.article h2 {
+    line-height: 2;
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+}
+.article p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: rgb(103,102,84);
+}
+
+/* Footer */
+
+.footer {
+    background: rgb(38,44,34);
+}
+
+.footer li {
+    padding: 0 20px;
+    line-height: 4;
+    display: inline-block;
+    list-style: none;
+    color: white;
+}
