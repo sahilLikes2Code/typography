@@ -1,0 +1,348 @@
+CSS reset Eric Meyers
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*====================
+Custom CSS Begins here
+====================*/
+
+/* General */
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.white-text {
+    color: white;
+}
+
+.black-text {
+    color: black;
+}
+.grey-text {
+    color: rgb(91,91,107);
+}
+.text-light-red {
+    color: rgb(233, 108, 119);
+}
+
+.bg-light-red {
+    background-color: rgb(233, 108, 119);
+}
+.bg-grey {
+    background-color: rgb(236,129,140);
+}
+.bg-white {
+    background-color: white;
+}
+
+.font-13px {
+    font-size: 13px;
+}
+.section-padding {
+    padding-top: 100px;
+    padding-bottom: 85px;
+}
+.h3 {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.para-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 2;
+    text-decoration: none;
+}
+.h5 {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text-center {
+    text-align: center;
+    padding: 0 10px;
+}
+.font-10px {
+    font-size: 10px;
+}
+.arial-font {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.width-60 {
+    width: 60%;
+    margin: 0 auto;
+}
+ .wrap {
+     flex-wrap: wrap;
+ }
+
+
+
+
+/* Specific */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+/* Navbar */
+
+.header {
+    background-color: rgb(50, 51, 71);
+}
+
+.header nav a {
+    padding-left: 30px;
+    display: inline-flex;
+    text-decoration: none;
+    line-height: 5;
+    /* font-size: 13px; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.header nav div {
+    position: absolute;
+    right: 50px;
+    display: inline-flex;
+    text-decoration: none;
+    /* font-size: 10px; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+/* Banner section */
+
+.banner {
+    padding-top: 150px;
+    padding-bottom: 146px;
+    background-image: url(../media/banner.svg);
+    background-size: cover;
+}
+
+.banner h1 {
+    font-size: 30px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* text-align: center; */
+    font-weight: 700;
+    /* padding-bottom: 34px; */
+    margin-bottom: 34px;
+}
+
+.banner h2 {
+    font-size: 23px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-weight: 300;
+    /* text-align: center; */
+    /* padding-bottom: 46px; */
+    margin-bottom: 46px;
+}
+
+.banner .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 182px;
+    height: 44px;
+    /* font-size: 10px; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    margin: 0 auto;
+}
+
+/* Section with 3 columns  */
+
+.section-1 {
+    background-color: rgb(245, 245, 245);
+    /* padding-top: 100px;
+    padding-bottom: 85px; */
+}
+
+.section-1 h3 {
+    /* font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 50px; */
+}
+
+.section-1 p {
+    color: rgb(143, 143, 143);
+    margin: 0 auto;
+    /* text-align: center; */
+    /* width: 60%; */
+    /* padding: 0 150px; */
+    /* font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px; */
+}
+
+/* 3 Contact boxes */
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    margin: 62px 0 0 0;
+}
+.contact-box {
+    /* display: flex; */
+    box-sizing: border-box;
+    padding: 40px 0;
+    margin: 0 19px;
+    /* border: 1px solid black; */
+    /* text-align: center; */
+    width: 300px;
+    height: 280px;
+    /* add box shadow */
+}
+
+.contact-box i {
+    /* background-image: linear-gradient(to top right, rgba(209,96,107, 0.3), rgb(209,96,107)); */
+    color: rgb(233, 108, 119);
+    size: 65px;
+}
+.contact-box h5 {
+    /* font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif; */
+    padding: 20px 0 20px;
+}
+.contact-box p {
+    /* font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif; */
+    /* line-height: 2; */
+    /* padding-bottom: 38px; */
+}
+
+
+/* section 2 with 4 boxes and light red background */
+
+
+.box-container2 {
+    justify-content: center;
+    display: flex;
+    /* margin-top: 60px; */
+    /* max-width: 800px; */
+}
+
+.contact-box-wide {
+    width: 330px;
+    margin: 1.5%;
+}
+
+.contact-box-wide i {
+    margin: 44px 0 37px;
+}
+.contact-box-wide h5 {
+    margin-bottom: 25px;
+}
+.contact-box-wide p {
+    padding-bottom: 38px;
+}
+
+/* section3 with white background and 3 columns   */
+
+.divs-container-sec3 {
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+}
+.img-desc-box {
+    width: 27%;
+    margin: 1%;
+}
+.img-desc-box h5 {
+    margin: 25px 0;
+}
+.img-desc-box p {
+    margin-bottom: 25px;
+}
+img {
+    width: 100%;
+}
+.small-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 40px;
+    width: 140px;
+    border: 1px solid rgb(224,224,224);
+    /* text-align: center;
+    line-height: 40px; */
+}
+
+
+
+/* Contact Section */
+
+
+.contact-section {
+    background-color: rgb(245,245,245);
+}
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+}
+.mini-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 89px;
+}
+.button-border {
+    border: 1px solid rgb(224,224,224);
+}
+.footer {
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    margin: 50px auto 50px auto;
+    color: rgb(170,170,170);
+}
+.footer ul {
+    margin-bottom: 30px;
+}
+.footer ul a{
+    color: rgb(170,170,170);
+    padding: 0 10px;
+    
+}
